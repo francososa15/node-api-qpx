@@ -1,0 +1,35 @@
+
+//OBTENER TODOS LOS DATOS
+GET http://localhost:3000/equipos HTTP/1.1
+
+
+
+//OBTENER UN DATO POR ID
+###
+GET http://localhost:3000/equipos/3 HTTP/1.1
+
+
+//CREAR UN DATO
+###
+POST http://localhost:3000/equipos HTTP/1.1
+Content-Type: application/json
+
+{
+            "nombre": "Boca Juniors",
+            "pais": "Argentina",
+            "año": 1905
+}
+
+//EDITAR UN DATO MEDIANTE ID
+###
+PUT http://localhost:3000/equipos/3 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Re Albañil"
+}
+
+
+//BORRAR UN DATO
+###
+DELETE http://localhost:3000/equipos/4 HTTP/1.1
